@@ -3,19 +3,125 @@
 
 __metadata:
   version: 8
-  cacheKey: 10c0
+  cacheKey: 10
+
+"@types/prop-types@npm:*":
+  version: 15.7.12
+  resolution: "@types/prop-types@npm:15.7.12"
+  checksum: 10/ac16cc3d0a84431ffa5cfdf89579ad1e2269549f32ce0c769321fdd078f84db4fbe1b461ed5a1a496caf09e637c0e367d600c541435716a55b1d9713f5035dfe
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:^18":
+  version: 18.3.0
+  resolution: "@types/react-dom@npm:18.3.0"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10/6ff53f5a7b7fba952a68e114d3b542ebdc1e87a794234785ebab0bcd9bde7fb4885f21ebaf93d26dc0a1b5b93287f42cad68b78ae04dddf6b20da7aceff0beaf
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*, @types/react@npm:^18":
+  version: 18.3.3
+  resolution: "@types/react@npm:18.3.3"
+  dependencies:
+    "@types/prop-types": "npm:*"
+    csstype: "npm:^3.0.2"
+  checksum: 10/68e203b7f1f91d6cf21f33fc7af9d6d228035a26c83f514981e54aa3da695d0ec6af10c277c6336de1dd76c4adbe9563f3a21f80c4462000f41e5f370b46e96c
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.0.2":
+  version: 3.1.3
+  resolution: "csstype@npm:3.1.3"
+  checksum: 10/f593cce41ff5ade23f44e77521e3a1bcc2c64107041e1bf6c3c32adc5187d0d60983292fda326154d20b01079e24931aa5b08e4467cc488b60bb1e7f6d478ade
+  languageName: node
+  linkType: hard
+
+"fflate@npm:^0.4.8":
+  version: 0.4.8
+  resolution: "fflate@npm:0.4.8"
+  checksum: 10/c0c75029bcbefd0b47cede4ad2a3698f571e38d3d93dfbb96d744c655ec3bf5e31111044c2c01fa3965109874f5be8b5a6b3686b958392693689665cbabf3ece
+  languageName: node
+  linkType: hard
 
 "found_analytics@workspace:.":
   version: 0.0.0-use.local
   resolution: "found_analytics@workspace:."
   dependencies:
+    "@types/react": "npm:^18"
+    "@types/react-dom": "npm:^18"
+    posthog-js: "npm:^1.136.2"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
     typescript: "npm:^5.4.5"
-  peerDependencies:
-    posthog-js: "*"
-    react: "*"
-    react-dom: "*"
   languageName: unknown
   linkType: soft
+
+"js-tokens@npm:^3.0.0 || ^4.0.0":
+  version: 4.0.0
+  resolution: "js-tokens@npm:4.0.0"
+  checksum: 10/af37d0d913fb56aec6dc0074c163cc71cd23c0b8aad5c2350747b6721d37ba118af35abdd8b33c47ec2800de07dedb16a527ca9c530ee004093e04958bd0cbf2
+  languageName: node
+  linkType: hard
+
+"loose-envify@npm:^1.1.0":
+  version: 1.4.0
+  resolution: "loose-envify@npm:1.4.0"
+  dependencies:
+    js-tokens: "npm:^3.0.0 || ^4.0.0"
+  bin:
+    loose-envify: cli.js
+  checksum: 10/6517e24e0cad87ec9888f500c5b5947032cdfe6ef65e1c1936a0c48a524b81e65542c9c3edc91c97d5bddc806ee2a985dbc79be89215d613b1de5db6d1cfe6f4
+  languageName: node
+  linkType: hard
+
+"posthog-js@npm:^1.136.2":
+  version: 1.136.2
+  resolution: "posthog-js@npm:1.136.2"
+  dependencies:
+    fflate: "npm:^0.4.8"
+    preact: "npm:^10.19.3"
+  checksum: 10/ecbee094e7d8fbf3d14281c52137c8aa15b82fa90afd064cf766bcdac2c8cd276019e3a6b552dd52648cde5d49ebd35c3db5a4316f4c98ba769fd1260c186abb
+  languageName: node
+  linkType: hard
+
+"preact@npm:^10.19.3":
+  version: 10.22.0
+  resolution: "preact@npm:10.22.0"
+  checksum: 10/0f3092916a538fa47d205d603bb5c513f9368a59bcbf881b457641ea6b88470b6a07960da8727db1287c232cb0f3a6292963917fa5cf09864be5eb50bf2a294e
+  languageName: node
+  linkType: hard
+
+"react-dom@npm:^18.3.1":
+  version: 18.3.1
+  resolution: "react-dom@npm:18.3.1"
+  dependencies:
+    loose-envify: "npm:^1.1.0"
+    scheduler: "npm:^0.23.2"
+  peerDependencies:
+    react: ^18.3.1
+  checksum: 10/3f4b73a3aa083091173b29812b10394dd06f4ac06aff410b74702cfb3aa29d7b0ced208aab92d5272919b612e5cda21aeb1d54191848cf6e46e9e354f3541f81
+  languageName: node
+  linkType: hard
+
+"react@npm:^18.3.1":
+  version: 18.3.1
+  resolution: "react@npm:18.3.1"
+  dependencies:
+    loose-envify: "npm:^1.1.0"
+  checksum: 10/261137d3f3993eaa2368a83110466fc0e558bc2c7f7ae7ca52d94f03aac945f45146bd85e5f481044db1758a1dbb57879e2fcdd33924e2dde1bdc550ce73f7bf
+  languageName: node
+  linkType: hard
+
+"scheduler@npm:^0.23.2":
+  version: 0.23.2
+  resolution: "scheduler@npm:0.23.2"
+  dependencies:
+    loose-envify: "npm:^1.1.0"
+  checksum: 10/e8d68b89d18d5b028223edf090092846868a765a591944760942b77ea1f69b17235f7e956696efbb62c8130ab90af7e0949bfb8eba7896335507317236966bc9
+  languageName: node
+  linkType: hard
 
 "typescript@npm:^5.4.5":
   version: 5.4.5
@@ -23,7 +129,7 @@ __metadata:
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/2954022ada340fd3d6a9e2b8e534f65d57c92d5f3989a263754a78aba549f7e6529acc1921913560a4b816c46dce7df4a4d29f9f11a3dc0d4213bb76d043251e
+  checksum: 10/d04a9e27e6d83861f2126665aa8d84847e8ebabcea9125b9ebc30370b98cb38b5dff2508d74e2326a744938191a83a69aa9fddab41f193ffa43eabfdf3f190a5
   languageName: node
   linkType: hard
 
@@ -33,6 +139,6 @@ __metadata:
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/db2ad2a16ca829f50427eeb1da155e7a45e598eec7b086d8b4e8ba44e5a235f758e606d681c66992230d3fc3b8995865e5fd0b22a2c95486d0b3200f83072ec9
+  checksum: 10/760f7d92fb383dbf7dee2443bf902f4365db2117f96f875cf809167f6103d55064de973db9f78fe8f31ec08fff52b2c969aee0d310939c0a3798ec75d0bca2e1
   languageName: node
   linkType: hard
