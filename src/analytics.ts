@@ -1,8 +1,5 @@
 import { posthog } from "posthog-js";
 
-import { ProfileScreenProps } from "./screens";
-import { HomeScreenProps } from "./screens";
-
 // define the possible event types
 type InterfaceElement =
   | "Button"
@@ -21,6 +18,7 @@ type InterfaceOperation =
 // optional - can be used to track CRUD operations
 type CRUDOperation = "Created" | "Updated" | "Deleted";
 
+// define screen names (improvement: generate automatically from the router)
 type ScreenNames = "Home" | "Profile";
 
 type InteractionEventProps = {
@@ -29,6 +27,7 @@ type InteractionEventProps = {
   $set?: Record<string, string | unknown>;
 };
 
+// call this function when an element is interacted with
 export function interactionEvent(
   event: InterfaceElement,
   operation: InterfaceOperation,
