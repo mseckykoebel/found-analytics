@@ -1,5 +1,7 @@
 # Found analytics
 
+Hey there!
+
 Thanks for taking the time to check this out. This repo serves as a collection of thoughts and ideas regarding implementing things like event tracking and feature flagging into Found.
 
 It’s based on some lessons I learned from my time working at Pathize. Any library could realistically be used for this; we used Posthog, so that’s what is included here.
