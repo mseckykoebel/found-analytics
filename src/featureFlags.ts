@@ -20,16 +20,3 @@ export function getFeatures(flagKey: string[]): Feature[] {
     };
   });
 }
-
-/**
- * Example usage:
- *
- * import { getFeatures } from "./featureFlags";
- *
- * const features = getFeatures(["EX-35", "FF-12"]);
- * const paywallFeature = features.find((f) => f.flagKey === "EX-35");
- *
- * if (paywallFeature?.enabled) {
- *   ...do something
- * }
- */
