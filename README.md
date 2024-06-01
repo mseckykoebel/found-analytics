@@ -6,10 +6,6 @@
 
 ...
 
-## Future work - improvements to feature flags
-
-...
-
 ## Future work - improvements to analytics
 
 1. screen names constructed automatically to reduce toil
